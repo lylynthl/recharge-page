@@ -1,107 +1,137 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nạp tiền | Recharge</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thông tin nạp tiền</title>
   <style>
-    body { font-family: 'Montserrat', sans-serif; margin: 0; background: #f5f5f5; color: #333; }
-    .topbar {
-      background: #0d47a1;
-      color: white;
-      padding: 10px 20px;
-      font-size: 14px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
     }
+
     .header {
-      background: #fff;
+      background: #0d47a1;
+      color: #fff;
+      padding: 8px 16px;
+      font-size: 14px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      padding: 10px 20px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
-    .logo { height: 40px; }
-    .main {
-      max-width: 1000px;
+
+    .header span {
+      font-size: 12px;
+    }
+
+    .container {
+      max-width: 960px;
       margin: 30px auto;
       background: #fff;
-      padding: 30px;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
-    h1 {
-      font-size: 24px;
-      color: #1e88e5;
-      margin-bottom: 20px;
+
+    h2 {
+      color: #1565c0;
+      margin-bottom: 16px;
     }
-    .note, .account-info {
+
+    .alert-box {
+      background: linear-gradient(to right, #2196f3, #21cbf3);
+      color: #fff;
+      font-weight: bold;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .note {
       background: #fff;
       border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 24px;
     }
-    .note-title {
-      background: linear-gradient(45deg, #1976d2, #42a5f5);
-      color: white;
-      padding: 10px 15px;
-      border-radius: 6px;
+
+    .note p {
+      margin: 6px 0;
+    }
+
+    .note a {
+      color: #0d47a1;
       font-weight: bold;
-      margin-bottom: 15px;
-      display: inline-block;
+      text-decoration: none;
     }
-    .account-info img {
-      max-width: 100%;
-      height: auto;
+
+    .qr-box {
+      text-align: center;
+    }
+
+    .qr-box img {
+      max-width: 280px;
+      width: 100%;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-    .account-detail {
-      margin-top: 10px;
+
+    .qr-text {
+      margin-top: 12px;
+      font-size: 15px;
+      color: #333;
     }
-    .account-detail p {
-      margin: 4px 0;
-    }
+
     .footer {
       text-align: center;
-      font-size: 14px;
+      margin-top: 30px;
+      font-size: 13px;
       color: #777;
-      padding: 30px 20px;
+    }
+
+    .highlight {
+      color: green;
+      font-weight: bold;
+    }
+
+    .warning {
+      color: red;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="topbar">
-    Chào mừng bạn đến với Recharge Page
-  </div>
+
   <div class="header">
-    <img src="https://via.placeholder.com/120x40?text=LOGO" alt="logo" class="logo">
-    <div style="font-size: 14px;">Hotline: 0987054699 | Email: support@yourdomain.com</div>
+    <strong>Chào mừng bạn đến với Recharge Page</strong>
+    <span>Hotline: 0987054699 | Email: support@yourdomain.com</span>
   </div>
 
-  <div class="main">
-    <h1>💰 Thông tin nạp tiền</h1>
+  <div class="container">
+    <h2>💰 Thông tin nạp tiền</h2>
+
+    <div class="alert-box">⚠️ LƯU Ý NẠP TIỀN</div>
+
     <div class="note">
-      <div class="note-title">⚠️ LƯU Ý NẠP TIỀN</div>
-      <p>✔️ Ghi đúng nội dung chuyển khoản để hệ thống kiểm tra và cộng tiền.</p>
-      <p>⏰ Tiền sẽ được cập nhật sau 5 - 10 phút.</p>
-      <p>💬 Cần hỗ trợ? Zalo: <a href="tel:0987054699">0987054699</a> | Telegram: <a href="https://t.me/viaadss24h">@viaadss24h</a></p>
+      <p>✔️ Ghi đúng <strong>nội dung chuyển khoản</strong> để hệ thống kiểm tra và cộng tiền.</p>
+      <p>⏰ Tiền sẽ được cập nhật sau <strong>5 - 10 phút</strong>.</p>
+      <p>💬 Cần hỗ trợ? Zalo: <a href="https://zalo.me/0987054699">0987054699</a> | Telegram: <a href="https://t.me/viaadss24h">@viaadss24h</a></p>
     </div>
 
-    <div class="account-info">
-      <h2>🏦 VietQR – VIETINBANK</h2>
-      <img src="qr-vietinbank.png" alt="QR Code Vietinbank">
-      <div class="account-detail">
-        <p>👤 <strong>Chủ tài khoản:</strong> NGUYEN THI HUONG LY</p>
-        <p>💳 <strong>Số tài khoản:</strong> <span style="color:green">109870705923</span></p>
-        <p>🏦 <strong>Ngân hàng:</strong> VietinBank CN BA DINH – PGD VAN CAO</p>
-        <p>📝 <strong>Nội dung chuyển khoản:</strong> <span style="color:red">ID42089</span></p>
+    <div class="qr-box">
+      <h3>🏦 VietQR – VIETINBANK</h3>
+      <img src="qr-vietinbank.png" alt="QR Vietinbank" />
+      <div class="qr-text">
+        <p><strong>👤 Chủ tài khoản:</strong> NGUYEN THI HUONG LY</p>
+        <p><strong>💳 Số tài khoản:</strong> <span class="highlight">109870705923</span></p>
+        <p><strong>🏛️ Ngân hàng:</strong> VietinBank CN BA DINH – PGD VAN CAO</p>
+        <p><strong>📝 Nội dung chuyển khoản:</strong> <span class="warning">ID42089</span></p>
       </div>
     </div>
-  </div>
 
-  <div class="footer">
-    © 2025 Recharge Page | Thiết kế bởi bạn ❤️
+    <div class="footer">
+      © 2025 Recharge Page | Thiết kế bởi bạn ❤️
+    </div>
   </div>
 </body>
 </html>
